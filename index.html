@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космос - Бескрайняя Вселенная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Исследование Космоса</h1>
+        <p>Добро пожаловать на сайт, посвященный загадкам и красотам Вселенной!</p>
+    </header>
+
+    <main>
+        <section class="solar-system">
+            <h2>Солнечная система в 3D</h2>
+            <p>Наша Солнечная система состоит из Солнца и множества космических объектов, вращающихся вокруг него, включая 8 планет. Выберите планету для просмотра:</p>
+
+            <div class="planet-controls">
+                <button onclick="showPlanet('mercury')">Меркурий</button>
+                <button onclick="showPlanet('venus')">Венера</button>
+                <button onclick="showPlanet('earth')">Земля</button>
+                <button onclick="showPlanet('mars')">Марс</button>
+                <button onclick="showPlanet('jupiter')">Юпитер</button>
+                <button onclick="showPlanet('saturn')">Сатурн</button>
+                <button onclick="showPlanet('uranus')">Уран</button>
+                <button onclick="showPlanet('neptune')">Нептун</button>
+            </div>
+
+            <div id="canvas-container"></div>
+            <p class="viewer-hint">Используйте мышь для вращения (левая кнопка) и масштабирования (колесико) планеты.</p>
+        </section>
+
+        <section class="galaxies">
+            <h2>Галактики</h2>
+            <p>Галактика — это гравитационно-связанная система из звёзд, звёздных скоплений, межзвёздного газа и пыли, тёмной материи, планет. Наша галактика называется Млечный Путь.</p>
+        </section>
+
+        <section class="exploration">
+            <h2>Освоение космоса</h2>
+            <p>Человечество всегда стремилось к звездам. От первого искусственного спутника Земли до высадки человека на Луну и запуска марсоходов — мы постоянно расширяем границы наших знаний.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Сайт о космосе. Все права защищены.</p>
+    </footer>
+
+    <!-- Three.js and OrbitControls -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
